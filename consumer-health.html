@@ -35,7 +35,7 @@
 <li>Food allergies and food sensitivities you enter.</li>
 <li>Health-related answers from the onboarding questionnaire.</li>
 <li>Your food scan history, to the extent it reflects dietary management of your condition.</li>
-<li>Label photos you submit, which are used once for analysis and then deleted. (A photo of the front of a package that you submit while adding a missing product is not treated as health data: it is stored as the product's catalog picture and is visible to other users.)</li>
+<li>Label photos you submit, which are used once for automated reading and then retained privately so we can verify the accuracy of the shared product catalog. They are visible only to us — never to other users — and are deleted when you delete your account. (A photo of the front of a package that you submit while adding a missing product is not treated as health data: it is stored as the product's catalog picture and is visible to other users.)</li>
 <li>The Monthly Report we generate when you open it, which summarizes that month's scan activity through the lens of your condition, and which we save so it does not have to be rewritten each time.</li>
 </ul>
 <h2>Why we collect it</h2>
@@ -46,7 +46,7 @@
 <p>We do <strong>not</strong> sell consumer health data, and we do not share it for advertising. We share it only with the service providers needed to operate the app:</p>
 <ul>
 <li><strong>Supabase, Inc.</strong> — the database and authentication provider that securely stores your account and the health data you enter.</li>
-<li><strong>OpenAI</strong> — receives two things, each only to produce a result you asked for. First, a label photo you submit, used once to read the product's text and then deleted. Second, when you open your Monthly Report: the condition your scores are tailored to, together with that month's scan count, average score, and score breakdown. It never receives your name, email, account identifier, severity, allergies, or the individual products you scanned.</li>
+<li><strong>OpenAI</strong> — receives two things, each only to produce a result you asked for. First, a label photo you submit, used once to read the product's text; OpenAI does not keep it (the private copy we retain for catalog verification is described above). Second, when you open your Monthly Report: the condition your scores are tailored to, together with that month's scan count, average score, and score breakdown. It never receives your name, email, account identifier, severity, allergies, or the individual products you scanned.</li>
 </ul>
 <p>Apple and Google process only sign-in data, not your health data.</p>
 <h2>Your rights</h2>
@@ -58,7 +58,7 @@
 </ul>
 <p>To delete your data, use "Delete account" in the app, or email rdh2993@gmail.com. To withdraw the optional sharing consent, use Settings → Consent &amp; data sharing. We will honor verified requests as required by law and will not discriminate against you for exercising these rights.</p>
 <h2>Data retention and security</h2>
-<p>We keep consumer health data only while your account is active; label photos are deleted right after analysis. Data is encrypted in transit and at rest.</p>
+<p>We keep consumer health data only while your account is active; label photos you submit are retained privately for catalog verification and are removed with your account. Data is encrypted in transit and at rest.</p>
 <h2>Contact</h2>
 <p>rdh2993@gmail.com — Gutsy.</p>
 
